@@ -7,6 +7,10 @@ namespace Bakery
     public static int Loaf(int loaf)
     {
       int priceOfLoaf = 5;
+      if (loaf >= 2)
+      {
+        return loaf * priceOfLoaf - 2;
+      }
       return loaf * priceOfLoaf;
     }
   }

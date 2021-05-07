@@ -13,6 +13,11 @@ namespace Bakery.Tests
     {
       Assert.AreEqual(5, Bread.Loaf(1));
     }
+    [TestMethod]
+    public void Loaf_ReturnsFreeLoafCost_SubtractsFive()
+    {
+      Assert.AreEqual(10, Bread.Loaf(3));
+    }
   }
   [TestClass]
   public class PastryTests
