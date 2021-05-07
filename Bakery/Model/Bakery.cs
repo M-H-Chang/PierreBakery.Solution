@@ -13,6 +13,10 @@ namespace Bakery
 
   public class Pastry
   {
+    public static int pricePastry(int pas)
+    {
+      int priceOfPastry = 2;
 
+    }
   }
 }

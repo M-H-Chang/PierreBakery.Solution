@@ -14,4 +14,13 @@ namespace Bakery.Tests
       Assert.AreEqual(5, Bread.Loaf(1));
     }
   }
+  [TestClass]
+  public class Pastry
+  {
+    [TestMethod]
+    public void Pastry_ReturnsPastryCost_Two()
+    {
+      Assert.AreEqual(2, Pastry.Pastry(1));
+    }
+  }
 }
