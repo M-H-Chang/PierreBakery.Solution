@@ -9,7 +9,7 @@ namespace Bakery
       int priceOfLoaf = 5;
       if (loaf >= 2)
       {
-        return loaf * priceOfLoaf - 2;
+        return loaf * priceOfLoaf - 5;
       }
       return loaf * priceOfLoaf;
     }
