@@ -15,12 +15,12 @@ namespace Bakery.Tests
     }
   }
   [TestClass]
-  public class Pastry
+  public class PastryTests
   {
     [TestMethod]
-    public void Pastry_ReturnsPastryCost_Two()
+    public void pricePastry_ReturnsPastryCost_Two()
     {
-      Assert.AreEqual(2, Pastry.Pastry(1));
+      Assert.AreEqual(2, Pastry.PricePastry(1));
     }
   }
 }

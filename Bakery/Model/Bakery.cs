@@ -13,10 +13,10 @@ namespace Bakery
 
   public class Pastry
   {
-    public static int pricePastry(int pas)
+    public static int PricePastry(int pas)
     {
       int priceOfPastry = 2;
-
+      return pas * priceOfPastry;
     }
   }
 }
