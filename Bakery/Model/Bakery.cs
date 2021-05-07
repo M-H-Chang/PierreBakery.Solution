@@ -14,7 +14,10 @@ namespace Bakery
       {
         return breadPrice.LoafPrice * loaf - 5;
       }
-      return breadPrice.LoafPrice * loaf;
+      else
+      {
+        return breadPrice.LoafPrice * loaf;
+      }
     }
   }
 
@@ -30,7 +33,10 @@ namespace Bakery
       {
         return pas * pasPrice.PastryPrice - 1;
       }
-      return pas * pasPrice.PastryPrice;
+      else
+      {
+        return pas * pasPrice.PastryPrice;
+      }
     }
   }
 }
