@@ -4,30 +4,33 @@ namespace Bakery
 {
   public class Bread
   {
-    public static int LoafPrice { get; set; } = 5;
+    public int LoafPrice { get; set; }
     public static int Loaf(int loaf)
     {
-      LoafPrice = priceOfLoaf;
+      Bread breadPrice = new Bread();
+      breadPrice.LoafPrice = 5;
+
       if (loaf >= 2)
       {
-        return loaf * priceOfLoaf - 5;
+        return breadPrice.LoafPrice * loaf - 5;
       }
-      return loaf * priceOfLoaf;
+      return breadPrice.LoafPrice * loaf;
     }
   }
 
   public class Pastry
   {
-    public static int PastryPrice { get; set; } = 2;
+    public int PastryPrice { get; set; }
 
     public static int PricePastry(int pas)
     {
-      int priceOfPastry = 2;
+      Pastry pasPrice = new Pastry();
+      pasPrice.PastryPrice = 2;
       if (pas >= 3)
       {
-        return pas * priceOfPastry - 1;
+        return pas * pasPrice.PastryPrice - 1;
       }
-      return pas * priceOfPastry;
+      return pas * pasPrice.PastryPrice;
     }
   }
 }
