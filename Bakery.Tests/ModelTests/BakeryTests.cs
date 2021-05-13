@@ -9,6 +9,12 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread newLoaf = new Bread();
+      Assert.AreEqual(typeof(Bread), newLoaf.GetType());
+    }
+    [TestMethod]
     public void Loaf_ReturnsBreadCost_Five()
     {
       Assert.AreEqual(5, Bread.Loaf(1));
@@ -22,6 +28,12 @@ namespace Bakery.Tests
   [TestClass]
   public class PastryTests
   {
+    [TestMethod]
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
     [TestMethod]
     public void pricePastry_ReturnsPastryCost_Two()
     {
