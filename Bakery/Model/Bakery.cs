@@ -10,7 +10,7 @@ namespace Bakery
       Bread breadPrice = new Bread();
       breadPrice.LoafPrice = 5;
 
-      if (loaf >= 2)
+      if (loaf > 2)
       {
         return breadPrice.LoafPrice * loaf - 5;
       }
